@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Explore METANAIL Complex product information, ingredients, usage details, and available options.">
+<title>Explore METANAIL Complex</title>
+<style>
+:root{--green:#183d2b;--green2:#315c40;--ink:#1e2921;--muted:#5d685f;--paper:#f6f7f2;--line:#e1e6df;--white:#fff}
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:#fff;line-height:1.65}
+a{color:inherit}
+.wrap{width:min(100% - 36px,980px);margin:0 auto}
+header{border-bottom:1px solid var(--line);background:#fff}
+.nav{height:64px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-weight:800;letter-spacing:.09em;font-size:16px}.logo span{color:var(--green2)}
+.nav-note{font-size:12px;color:var(--muted)}
+.hero{background:var(--paper);padding:48px 0 42px}
+.hero-content{max-width:760px;margin:0 auto;text-align:center}
+.kicker{font-size:12px;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--green2);margin:0 0 12px}
+h1{font-size:clamp(30px,5vw,46px);line-height:1.14;letter-spacing:-.035em;margin:0 auto 16px;max-width:760px}
+.lead{font-size:17px;color:#4d5b50;max-width:700px;margin:0 auto 26px}
+.video-frame{width:min(100%,760px);aspect-ratio:16/9;margin:0 auto 22px;background:linear-gradient(135deg,#e7ede2 0%,#cbd9c9 52%,#b5c8b4 100%);border:1px solid #d1dccf;border-radius:12px;overflow:hidden;position:relative;display:flex;align-items:center;justify-content:center;box-shadow:0 14px 35px rgba(28,55,35,.12)}
+.video-frame:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 50% 45%,rgba(255,255,255,.48),transparent 42%),linear-gradient(120deg,transparent 55%,rgba(23,61,43,.12))}
+.mock-product{z-index:1;width:clamp(110px,19vw,150px);height:clamp(145px,24vw,200px);background:linear-gradient(145deg,#fffef7,#e3e9dc);border:1px solid rgba(34,67,44,.28);border-radius:9px;box-shadow:0 15px 28px rgba(25,50,30,.2);display:flex;flex-direction:column;align-items:center;justify-content:center;color:#23442e;position:relative;transform:rotate(-4deg)}
+.mock-product:before{content:"";position:absolute;inset:7px;border:1px solid rgba(35,68,46,.28);border-radius:5px}
+.mock-brand{font-size:10px;letter-spacing:.13em;font-weight:800}.mock-title{font-weight:800;font-size:22px;line-height:1.1;margin:13px 0 8px;letter-spacing:-.04em}.mock-small{font-size:8px;letter-spacing:.08em;text-transform:uppercase}
+.play{z-index:2;position:absolute;width:64px;height:64px;border-radius:50%;display:grid;place-items:center;background:var(--green);border:4px solid rgba(255,255,255,.9);box-shadow:0 6px 18px rgba(0,0,0,.2);left:50%;top:50%;transform:translate(-50%,-50%);color:#fff}
+.play svg{margin-left:3px}
+.video-caption{font-size:12px;color:var(--muted);margin:0 0 20px}
+.cta{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:var(--green);color:#fff;text-decoration:none;font-weight:700;font-size:16px;padding:16px 25px;border-radius:7px;min-height:54px;box-shadow:0 5px 12px rgba(24,61,43,.12);transition:background .2s}
+.cta:hover{background:#102f20}.cta:focus-visible{outline:3px solid #80a98b;outline-offset:3px}
+.hero .cta{width:min(100%,420px)}
+.small-note{font-size:11px;color:#6c766d;margin:10px 0 0}
+section.content{padding:52px 0}
+.content-inner{max-width:760px;margin:0 auto}
+h2{font-size:clamp(24px,3.6vw,32px);line-height:1.25;letter-spacing:-.025em;margin:0 0 14px}
+p{margin:0 0 15px}
+.content p{color:#536056}
+.benefits{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:26px 0 30px}
+.benefit{border:1px solid var(--line);border-radius:10px;padding:18px;background:#fff}
+.num{width:34px;height:34px;display:grid;place-items:center;background:#edf2e9;color:var(--green);border-radius:50%;font-weight:800;margin-bottom:10px}
+.benefit h3{font-size:15px;margin:0 0 7px}.benefit p{font-size:13px;margin:0;color:var(--muted)}
+.info-panel{background:var(--paper);border:1px solid var(--line);padding:22px;border-radius:10px;margin:24px 0}
+.info-panel h3{font-size:17px;margin:0 0 9px}.info-panel p{margin:0;color:#536056}
+.center-cta{text-align:center;margin-top:30px}
+.bottom{background:var(--paper);text-align:center;padding:42px 0}
+.bottom p{max-width:650px;margin:0 auto 20px;color:var(--muted)}
+footer{border-top:1px solid var(--line);padding:24px 0 30px;font-size:11px;color:#727b73}
+footer p{max-width:900px;margin:8px 0}
+@media(max-width:680px){.wrap{width:calc(100% - 28px)}.nav{height:56px}.nav-note{display:none}.hero{padding:34px 0 32px}.lead{font-size:16px}.video-frame{border-radius:9px}.play{width:58px;height:58px}.benefits{grid-template-columns:1fr}.content section{padding:40px 0}.cta{width:100%}.content-inner{width:100%}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{transition:none!important}}
+</style>
+</head>
+<body>
+<header><div class="wrap nav"><div class="logo">NAILCARE <span>GUIDE</span></div><div class="nav-note">A closer look at product information</div></div></header>
+<main>
+<section class="hero">
+<div class="wrap hero-content">
+<p class="kicker">Product overview</p>
+<h1>What’s Really Behind Changing Toenail Appearance?</h1>
+<p class="lead">Discover what to look for in a nail-care product, explore the METANAIL formula, and review the details before making your choice.</p>
+
+<!-- 16:9 video-style thumbnail; clicking it opens the official affiliate presentation. -->
+<a class="video-frame affiliate-link" href="https://getmetanailcomplex.cc/v1-discovery/?aff=OfferZone15" target="_blank" rel="sponsored noopener noreferrer" aria-label="Explore the official METANAIL presentation">
+  <div class="mock-product" aria-hidden="true"><div class="mock-brand">METANAIL</div><div class="mock-title">COMPLEX</div><div class="mock-small">Product overview</div></div>
+  <div class="play" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></div>
+</a>
+<p class="video-caption">Select the preview to open the official product presentation.</p>
+<a class="cta affiliate-link" href="https://getmetanailcomplex.cc/v1-discovery/?aff=OfferZone15" target="_blank" rel="sponsored noopener noreferrer">Explore the Official Presentation <span aria-hidden="true">→</span></a>
+<p class="small-note">You’ll be taken to the product presentation in a new tab.</p>
+</div>
+</section>
+
+<section class="content">
+<div class="wrap content-inner">
+<h2>What Should You Know Before Choosing a Nail-Care Product?</h2>
+<p>Not all nail-care products are the same. Before choosing a product, it can help to understand its ingredients, intended use, directions, and any relevant warnings.</p>
+<p>In the official METANAIL presentation, review the product details and decide for yourself whether it fits your preferences and routine. Take time to read the information and check the terms before placing an order.</p>
+
+<div class="benefits">
+<article class="benefit"><div class="num">1</div><h3>Review the formula</h3><p>Look over the product description and formula information provided by the seller.</p></article>
+<article class="benefit"><div class="num">2</div><h3>Check directions</h3><p>Read the listed ingredients, directions for use, and product warnings carefully.</p></article>
+<article class="benefit"><div class="num">3</div><h3>Compare the options</h3><p>Check current package options, pricing, shipping details, and purchase terms.</p></article>
+</div>
+
+<div class="info-panel">
+<h3>Make an informed choice</h3>
+<p>Product pages can change, so verify the latest information directly with the seller. If you have a persistent nail change or are concerned about a possible nail condition, consider asking a qualified healthcare professional for advice.</p>
+</div>
+
+<div class="center-cta">
+<a class="cta affiliate-link" href="https://getmetanailcomplex.cc/v1-discovery/?aff=OfferZone15" target="_blank" rel="sponsored noopener noreferrer">Explore the Official Presentation <span aria-hidden="true">→</span></a>
+</div>
+</div>
+</section>
+
+<section class="bottom"><div class="wrap">
+<h2>Take a Closer Look at METANAIL</h2>
+<p>Explore the product presentation, review the available information, and make your decision based on the details provided.</p>
+<a class="cta affiliate-link" href="https://getmetanailcomplex.cc/v1-discovery/?aff=OfferZone15" target="_blank" rel="sponsored noopener noreferrer">Explore the Official Presentation <span aria-hidden="true">→</span></a>
+</div></section>
+</main>
+<footer><div class="wrap">
+<p><strong>Affiliate disclosure:</strong> This page contains an affiliate link. The publisher may receive a commission if you purchase through it, at no extra cost to you.</p>
+<p><strong>Important information:</strong> This page is for general informational purposes and is not medical advice. Product details, ingredients, availability, and pricing should be confirmed on the official product page. No specific result is guaranteed.</p>
+<p>© <span id="year"></span> Nailcare Guide</p>
+</div></footer>
+<script>
+document.getElementById("year").textContent = new Date().getFullYear();
+const affiliateUrl = "https://getmetanailcomplex.cc/v1-discovery/?aff=OfferZone15";
+document.querySelectorAll(".affiliate-link").forEach(function (link) { link.href = affiliateUrl; });
+</script>
+</body>
+</html>
